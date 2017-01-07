@@ -39,10 +39,10 @@ type VisibilitySettings struct {
 
 // Return a new FactorioSettings struct with reasonable defaults.
 // These do not match the example values in the Factorio distribution.
-func NewFactorioServerSettings() FactorioServerSettings {
+func NewFactorioServerSettings(name string, description string) FactorioServerSettings {
 	return FactorioServerSettings{
-		Name:                   "My Factorio Server",
-		Description:            "I should really change my description",
+		Name:                   name,
+		Description:            description,
 		Visibility:             VisibilitySettings{Public: false, Lan: false},
 		AllowCommands:          "admins-only",
 		AutoSaveInterval:       uint(10),

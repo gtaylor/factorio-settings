@@ -7,7 +7,7 @@ import (
 )
 
 func TestFactorioSettings_String(t *testing.T) {
-	fs := fsettings.NewFactorioServerSettings()
+	fs := fsettings.NewFactorioServerSettings("Test Server", "This is a test!")
 	output := fs.String()
 	assert.NotEmpty(t, output)
 }
