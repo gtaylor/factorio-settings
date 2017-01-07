@@ -9,7 +9,7 @@ This package contains settings-related Go structs that can be used with the stan
     import "github.com/gtaylor/factorio-settings"
     
     func main() {
-        fs := fsettings.NewFactorioServerSettings()
+        fs := fsettings.NewFactorioServerSettings("Test Server", "This is a test!")
         fs.Name = "My Server"
         fs.Description = "This one!"
         println(fs.String())
@@ -17,7 +17,7 @@ This package contains settings-related Go structs that can be used with the stan
 
 More commonly, you'll just be marshalling and using the output in some way:
 
-    fs := fsettings.NewFactorioServerSettings()
+    fs := fsettings.NewFactorioServerSettings("Test Server", "This is a test!")
     fs.Name = "My Server"
     fs.Description = "This one!"
     j, err := json.Marshal(fs)
