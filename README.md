@@ -4,6 +4,7 @@ This package contains settings-related Go structs that can be used with the stan
 
 ## Example usage
 
+```go
     package main
     
     import "github.com/gtaylor/factorio-settings"
@@ -14,9 +15,11 @@ This package contains settings-related Go structs that can be used with the stan
         fs.Description = "This one!"
         println(fs.String())
     }
+````
 
 More commonly, you'll just be marshalling and using the output in some way:
 
+```go
     fs := fsettings.NewFactorioServerSettings("Test Server", "This is a test!")
     fs.Name = "My Server"
     fs.Description = "This one!"
@@ -25,9 +28,11 @@ More commonly, you'll just be marshalling and using the output in some way:
         // Blah
     }
     // do stuff with j here
+````
 
 You can also do similar things with map generation settings:
 
+```go
     ms := fsettings.NewMapGenSettings()
     ms.PeacefulMode = true
     ms.AutoplaceControls.Coal.Richness = "high"
@@ -36,6 +41,7 @@ You can also do similar things with map generation settings:
         // Blah
     }
     // do stuff with j here
+```
 
 ## License
 
