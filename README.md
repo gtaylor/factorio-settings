@@ -1,4 +1,4 @@
-# Factorio Settings Struct
+# Factorio Settings for Go
 
 This package contains settings-related Go structs that can be used with the standard lib's [encoding/json](https://golang.org/pkg/encoding/json/#MarshalIndent) package. This is useful for dynamically generating Factorio server settings files.
 
