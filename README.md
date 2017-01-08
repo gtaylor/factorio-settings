@@ -1,4 +1,6 @@
 # Factorio Settings for Go
+[![GoDoc](https://godoc.org/github.com/gtaylor/factorio-settings?status.svg)](https://godoc.org/github.com/gtaylor/factorio-settings)
+[![License](https://img.shields.io/github/license/gtaylor/factorio-settings.svg)](https://github.com/gtaylor/factorio-settings/blob/master/LICENSE)
 
 This package contains settings-related Go structs that can be used with the standard lib's [encoding/json](https://golang.org/pkg/encoding/json/#MarshalIndent) package. This is useful for dynamically generating Factorio server settings files.
 
